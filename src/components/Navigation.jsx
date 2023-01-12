@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'Gallery', 'Upload', 'About'];
 
 function Navigation(props) {
     const { window } = props;
@@ -30,7 +30,7 @@ function Navigation(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                MUI
+                Anonymous Image Sharing Service
             </Typography>
             <Divider />
             <List>
@@ -66,11 +66,11 @@ function Navigation(props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        MUI
+                        AIS
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{ color: '#fff' }}>
+                            <Button key={item} sx={{ color: '#fff' }} href={import.meta.env.BASE_URL + item}>
                                 {item}
                             </Button>
                         ))}
