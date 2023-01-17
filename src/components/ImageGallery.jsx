@@ -4,15 +4,15 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
 export default function ImageGallery(props) {
-    const { itemData } = props;
+    const { urls } = props;
     return (
         <Box sx={{ overflowY: 'scroll' }}>
             <ImageList variant="masonry" cols={3} gap={8}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
+                {urls.map((item) => (
+                    <ImageListItem key={item}>
                         <img
-                            src={`${item.img}?w=248&fit=crop&auto=format`}
-                            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                            src={`${item}?w=248&fit=crop&auto=format`}
+                            srcSet={`${item}?w=248&fit=crop&auto=format&dpr=2 2x`}
                             alt={item.title}
                             loading="lazy"
                         />
