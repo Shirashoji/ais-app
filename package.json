@@ -2,7 +2,7 @@
   "name": "ais-app",
   "private": true,
   "version": "0.0.0",
-  "description": "Anonymous image sharing service",
+  "description": "Anonymous images sharing service",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,5 +1,5 @@
 import ImageGallery from '../components/ImageGallery';
-import fetchImages from '../APIs/images';
+import fetchImages from '../APIs/fetchImages';
 
 const itemData = fetchImages();
 

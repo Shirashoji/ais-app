@@ -30,7 +30,7 @@ function Navigation(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h6" sx={{ my: 2 }}>
-                Anonymous Image Sharing Service
+                Anonymous Images Sharing Service
             </Typography>
             <Divider />
             <List>
