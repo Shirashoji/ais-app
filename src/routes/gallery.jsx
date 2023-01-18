@@ -4,7 +4,7 @@ import ImageGallery from '../components/ImageGallery';
 import { fetchImage } from "../APIs/fetchImage.js";
 
 
-function Test() {
+function Gallery() {
     // Find all the prefixes and items.
     let images = [];
     const [urls, setUrls] = useState(null);
@@ -24,4 +24,4 @@ function Test() {
     );
 }
 
-export default Test;
+export default Gallery;

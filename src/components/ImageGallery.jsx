@@ -22,7 +22,7 @@ export default function ImageGallery(props) {
                             <img
                                 src={`${item}?w=124&fit=crop&auto=format`}
                                 srcSet={`${item}?w=124&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
+                                alt={item}
                                 loading="lazy"
                             />
                         </ImageListItem>
