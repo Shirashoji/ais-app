@@ -13,7 +13,7 @@ export default function ImageGallery(props) {
         return <Loading />;
     }
     else {
-        console.log(urls);
+        // console.log(urls);
         return (
             <Box sx={{ overflowY: 'scroll' }}>
                 <ImageList variant="masonry" cols={3} gap={8}>

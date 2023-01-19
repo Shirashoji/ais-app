@@ -1,16 +1,14 @@
 import { useEffect, useState } from "react";
 import ImageGallery from '../components/ImageGallery';
 
-import { fetchImage } from "../APIs/fetchImage.js";
+import { fetchImages } from "../APIs/fetchImages";
 
 
 function Gallery() {
     // Find all the prefixes and items.
-    let images = [];
     const [urls, setUrls] = useState(null);
-
     useEffect(() => {
-        fetchImage().then((urls) => {
+        fetchImages().then((urls) => {
             setUrls(urls);
             console.log(urls);
         });

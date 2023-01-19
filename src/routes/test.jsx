@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import ImageGallery from '../components/ImageGallery';
 
-import { fetchImage } from "../APIs/fetchImage.js";
+import { fetchImages } from "../APIs/fetchImages.js";
 
 
 
@@ -10,7 +10,7 @@ function Test() {
     const [urls, setUrls] = useState(null);
 
     useEffect(() => {
-        fetchImage().then((urls) => {
+        fetchImages().then((urls) => {
             setUrls(urls);
             console.log(urls);
         });
