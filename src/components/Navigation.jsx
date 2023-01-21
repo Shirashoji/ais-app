@@ -36,7 +36,7 @@ function Navigation(props) {
             <List>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton sx={{ textAlign: 'center' }} href={import.meta.env.BASE_URL + item}>
                             <ListItemText primary={item} />
                         </ListItemButton>
                     </ListItem>
