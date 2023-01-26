@@ -10,7 +10,7 @@ export default function Introduction() {
             </Typography>
 
             <Typography variant="body1" gutterBottom>
-                AISは，Anonymous Images Sharing serviceの略であり，このサイトは匿名版のInstagramといったところです．
+                AISは，Anonymous Images Sharing serviceの略であり，このサイトは匿名版のInstagramとか，Pinterestといったところです．
             </Typography>
             <Typography variant="body1" gutterBottom>
                 このサービスはアップロードした人に関する情報を一切保持しません．
