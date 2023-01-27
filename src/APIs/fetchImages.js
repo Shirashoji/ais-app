@@ -18,12 +18,14 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Storage and get a reference to the service
 const storage = getStorage(app);
 
+// 画像のURLを取得する関数
 async function fetchURL(name) {
     let imgRef = ref(storage, `gs://${import.meta.env.VITE_FIREBASE_STORE_BUCKET}/images/${name}`);
     const url = await getDownloadURL(imgRef);
     return url;
 }
 
+// 画像のファイル名のリストを取得する関数
 export async function fetchImages() {
     let images = [];
     const listRef = ref(storage, `gs://${import.meta.env.VITE_FIREBASE_STORE_BUCKET}/images`);
